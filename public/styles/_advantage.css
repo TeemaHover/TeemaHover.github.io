@@ -12,7 +12,14 @@
 .advantage {
     display: flex;
     margin-bottom: 4rem;
+    align-content: space-between;
     margin-right: 1rem;
+}
+
+.advantage_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .advantage img {

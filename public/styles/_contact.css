@@ -1,14 +1,20 @@
 #contact {
     background-image: url('/img/contact/contact_bg.jpg');
-    background-size: 100%;
+    background-size: 110% 100%;
     background-repeat: no-repeat;
     max-width: 1920px;
     height: 81.4vw;
-    margin-right: -6vw;
+    float: right;
+    width: calc(100vw - 300px);
+}
+
+#contact .container {
+    width: calc(100vw - 300px);
+    margin-left: 0;
 }
 
 .contact_content {
-    width: 30%;
+    width: calc(60% - 300px);
     margin: auto 0;
     padding-left: 10%;
     padding-top: 20%;
@@ -68,13 +74,14 @@ form {
 .contact_img {
     display: table;
     width: 100%;
+    height: 100vh;
 }
 
 .c_img_1 {
     width: 18%;
     position: sticky;
     margin-top: 39%;
-    margin-left: 34%;
+    margin-left: 26%;
     animation: none;
 }
 

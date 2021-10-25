@@ -6,6 +6,7 @@
 @import url(_usage.css);
 @import url(_contact.css);
 @import url(_suggest.css);
+@import url(media.css);
 :root {
     --font-default-color: #666a80;
     --font-title-color: #08104d;

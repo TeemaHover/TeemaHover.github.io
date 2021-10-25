@@ -77,3 +77,30 @@ nav img {
     margin-right: 10px;
     border-radius: 50%;
 }
+
+#nav {
+    display: none;
+}
+
+.view_nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d7e3f7;
+    padding: 8px 10rem;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+}
+
+.view_nav img {
+    width: 90px;
+}
+
+.view_nav a {
+    text-decoration: none;
+    padding: 1rem;
+    background: #08104d;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+}
