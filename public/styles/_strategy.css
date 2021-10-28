@@ -44,7 +44,8 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 500px;
+    height: 550px;
+    z-index: 3;
 }
 
 .s_last_img {
@@ -64,7 +65,7 @@
 }
 
 .s_last_img img:nth-child(1) {
-    z-index: 4;
+    z-index: 2;
 }
 
 .s_last_img img:nth-child(2) {
@@ -79,7 +80,7 @@
     justify-content: center;
     position: absolute;
     margin-top: 6rem;
-    padding: 0 2rem;
+    padding-right: 4rem;
     right: 0;
 }
 
@@ -338,4 +339,8 @@
 
 .line_half {
     top: -50%;
+}
+
+.st_img1 {
+    z-index: 2;
 }

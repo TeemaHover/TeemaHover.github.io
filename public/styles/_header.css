@@ -19,6 +19,7 @@
         padding-left: 3%;
         position: absolute;
         margin-top: 40%;
+        z-index: 10;
     }
     
     .title {
@@ -55,6 +56,7 @@
         border: 2px solid transparent;
         border-radius: 10px;
         display: inline-block;
+        cursor: pointer;
     }
     
     .btn_orange {
@@ -313,4 +315,16 @@
             margin-bottom: -47%;
             margin-left: 47%;
         }
+    }
+    
+    .btn:hover .header_svg_left {
+        display: inline-block;
+        margin-right: 10px;
+        fill: #fff;
+        transition: 0.5s ease-in;
+    }
+    
+    .btn:hover .header_svg_right {
+        display: none;
+        transition: 0.5s ease-out;
     }

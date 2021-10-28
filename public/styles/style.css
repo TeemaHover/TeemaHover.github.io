@@ -18,6 +18,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body,
 h1,
 h2,
@@ -70,4 +74,8 @@ svg {
     margin-top: 17px;
     font-size: 18px;
     line-height: 26px;
+}
+
+.contact_form {
+    display: none;
 }

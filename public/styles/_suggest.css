@@ -34,6 +34,7 @@ label {
     width: 160px;
     height: 80px;
     display: inline-block;
+    cursor: pointer;
 }
 
 label input {
@@ -51,7 +52,7 @@ label span {
     background: #f24d3a;
     border-radius: 80px;
     transition: 0.5s;
-    box-sizing: 0 15px 25px #f24d3a66;
+    box-shadow: 0 15px 25px #f24d3a66;
 }
 
 label input:checked~span {
@@ -59,7 +60,7 @@ label input:checked~span {
     box-shadow: 0 15px 25px #05be0566;
 }
 
-label span i {
+span i {
     position: absolute;
     top: 4px;
     left: 4px;
@@ -111,4 +112,12 @@ label input:checked~span i:after {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     background: #05be05;
+}
+
+label input:hover~span i:after {
+    bottom: 12px;
+    height: 15px;
+    border-radius: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }

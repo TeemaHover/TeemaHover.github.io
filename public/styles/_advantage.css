@@ -1,6 +1,11 @@
+.advantage_text a {
+    display: none;
+}
+
 #advantage {
     padding: 80px 0;
     background: #212126;
+    padding-bottom: 0;
 }
 
 .advantages {

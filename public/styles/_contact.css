@@ -1,9 +1,12 @@
+.contact_form {
+    display: none;
+}
+
 #contact {
     background-image: url('/img/contact/contact_bg.jpg');
-    background-size: 110% 100%;
+    background-size: 120% 150%;
     background-repeat: no-repeat;
     max-width: 1920px;
-    height: 81.4vw;
     float: right;
     width: calc(100vw - 300px);
 }
@@ -14,7 +17,7 @@
 }
 
 .contact_content {
-    width: calc(60% - 300px);
+    max-width: calc(55% - 300px);
     margin: auto 0;
     padding-left: 10%;
     padding-top: 20%;
@@ -75,35 +78,173 @@ form {
     display: table;
     width: 100%;
     height: 100vh;
+    position: relative;
 }
 
 .c_img_1 {
-    width: 18%;
+    width: 13vw;
     position: sticky;
-    margin-top: 39%;
-    margin-left: 26%;
     animation: none;
 }
 
 .c_img_2 {
-    width: 6%;
+    width: 4vw;
     position: sticky;
-    margin-bottom: 24%;
-    /* animation: aroundMove1 infinite 1s; */
 }
 
 .c_img_3 {
-    width: 16%;
+    width: 15vw;
     position: sticky;
-    left: 84%;
-    margin-bottom: 11%;
     animation: none;
 }
 
 .c_img_4 {
-    width: 30%;
+    width: 22vw;
     position: sticky;
-    left: 67%;
-    margin-top: -12%;
     animation: none;
+}
+
+.contact_img div {
+    position: absolute;
+    display: inline-block;
+}
+
+.c_1 {
+    top: 16%;
+    left: 74%;
+    animation: c_1 infinite 2s;
+}
+
+@keyframes c_1 {
+    0% {
+        top: 16%;
+        left: 74%;
+    }
+    5% {
+        top: 16.1%;
+        left: 74.1%;
+    }
+    10% {
+        top: 16.2%;
+        left: 74.2%;
+    }
+    15% {
+        top: 16.3%;
+        left: 74.3%;
+    }
+    20% {
+        top: 16.4%;
+        left: 74.4%;
+    }
+    25% {
+        top: 16.5%;
+        left: 74.5%;
+    }
+    30% {
+        top: 16.4%;
+        left: 74.6%;
+    }
+    35% {
+        top: 16.3%;
+        left: 74.7%;
+    }
+    40% {
+        top: 16.2%;
+        left: 74.8%;
+    }
+    45% {
+        top: 16.1%;
+        left: 74.9%;
+    }
+    50% {
+        top: 16%;
+        left: 75%;
+    }
+    55% {
+        top: 15.9%;
+        left: 74.9%;
+    }
+    60% {
+        top: 15.8%;
+        left: 74.8%;
+    }
+    65% {
+        top: 15.7%;
+        left: 74.7%;
+    }
+    70% {
+        top: 15.6%;
+        left: 74.6%;
+    }
+    75% {
+        top: 15.5%;
+        left: 74.5%;
+    }
+    80% {
+        top: 15.6%;
+        left: 74.4%;
+    }
+    85% {
+        top: 15.7%;
+        left: 74.3%;
+    }
+    90% {
+        top: 15.8%;
+        left: 74.2%;
+    }
+    95% {
+        top: 15.9%;
+        left: 74.1%;
+    }
+    100% {
+        top: 16%;
+        left: 74%;
+    }
+}
+
+.c_2 {
+    top: 39%;
+    left: 56%;
+}
+
+.c_3 {
+    top: 42%;
+    right: 0;
+    animation: c_3 infinite 4s;
+}
+
+@keyframes c_3 {
+    0% {
+        top: 42%;
+        right: 0;
+    }
+    50% {
+        top: 54%;
+        right: 12%;
+    }
+    100% {
+        top: 42%;
+        right: 0;
+    }
+}
+
+.c_4 {
+    top: 67%;
+    left: 46%;
+    animation: c_4 infinite 4s;
+}
+
+@keyframes c_4 {
+    0% {
+        top: 80%;
+        left: 28%;
+    }
+    50% {
+        top: 67%;
+        left: 46%;
+    }
+    100% {
+        top: 80%;
+        left: 28%;
+    }
 }
