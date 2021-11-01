@@ -287,4 +287,7 @@
     .s_last_img img {
         left: 5%;
     }
+    .usage_img_1 {
+        width: 37% !important;
+    }
 }
