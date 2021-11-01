@@ -21,7 +21,7 @@
         width: 100%;
         height: inherit;
     }
-    .header_text {
+    .header_te0xt {
         top: 50%;
         left: 10%;
         transform: translateY(-50%);
@@ -41,8 +41,7 @@
     }
     .s_last_img img {
         width: 40%;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 25%;
     }
     .s_last_text {
         position: relative;
@@ -284,5 +283,8 @@
     }
     .contact_img {
         display: none;
+    }
+    .s_last_img img {
+        left: 5%;
     }
 }
