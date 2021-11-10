@@ -1,0 +1,140 @@
+#parthner {
+    background: var(--s_bg_color);
+}
+
+#parthner .container {
+    padding: 120px 0;
+}
+
+.parthner_top {
+    text-align: center;
+    width: 80%;
+    color: #fff;
+    margin: 0 auto;
+}
+
+#parthner .section_title {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.parthner_top p {
+    color: #c9cfff;
+}
+
+.parthner_bot {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.parthner_bot_area {
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    min-height: 250px;
+    height: calc((100vw - 300px) / 4);
+    position: relative;
+    overflow: hidden;
+}
+
+.parthner_bot_area:hover .parthner_bot_img {
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.parthner_bot_area:hover .parthner_bot_bg {
+    overflow: hidden;
+}
+
+.parthner_bot_area:hover .parthner_bot_bg span {
+    top: 0;
+    transition: 0.5s;
+}
+
+.parthner_bot_bg span {
+    width: 100%;
+    background: rgba(66, 86, 214, 0.1);
+    height: 100%;
+    top: calc((100vw - 300px) / 3);
+    transition: 0.5s;
+}
+
+.parthner_bot_area:hover .parthner_bot_area_text {
+    top: 0;
+    transition: 0.5s;
+}
+
+.parthner_bot_area_img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.parthner_bot_bg,
+.parthner_bot_img {
+    position: absolute;
+    height: 400px;
+}
+
+.parthner_bot_img {
+    z-index: 10;
+    bottom: 0;
+}
+
+.parthner_bot_area_img img {
+    width: auto;
+    height: 100%;
+}
+
+.parthner_bot_area_text {
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: calc((100vw - 300px) / 3);
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    z-index: 12;
+    transition: 0.5s;
+}
+
+.parthner_bot_area_text h5 {
+    font-size: 13px;
+    margin-bottom: 7px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.parthner_bot_area_text h3 {
+    font-size: 20px;
+    line-height: 1.2em;
+    color: #fff;
+    font-weight: 700;
+}
+
+.parthner_bot_area_text ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 50px;
+}
+
+.parthner_bot_area_text ul li a {
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 50%;
+    border: 1px solid #3349d3;
+}
+
+.parthner_bot_area_text ul li a i {
+    font-size: 20px;
+    color: #fff;
+}
