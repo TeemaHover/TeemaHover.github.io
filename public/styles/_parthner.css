@@ -1,5 +1,6 @@
 #parthner {
     background: var(--s_bg_color);
+    display: none;
 }
 
 #parthner .container {

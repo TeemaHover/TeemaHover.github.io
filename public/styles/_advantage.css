@@ -10,7 +10,7 @@
 
 .advantages {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 0 4rem;
 }
 
@@ -24,7 +24,6 @@
 .advantage_text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .advantage img {

@@ -4,7 +4,7 @@
 
 #contact {
     background-image: url('/img/contact/contact_bg.jpg');
-    background-size: 120% 150%;
+    background-size: 120% 200%;
     background-repeat: no-repeat;
     max-width: 1920px;
     float: right;
@@ -14,13 +14,14 @@
 #contact .container {
     width: calc(100vw - 300px);
     margin-left: 0;
+    overflow: hidden;
 }
 
 .contact_content {
     max-width: calc(55% - 300px);
     margin: auto 0;
     padding-left: 10%;
-    padding-top: 20%;
+    padding-top: 10%;
     position: absolute;
     z-index: 5;
 }
@@ -39,6 +40,7 @@
 
 #contact .btn_orange {
     margin-right: 15px;
+    display: none;
 }
 
 .contact_form {
@@ -93,13 +95,13 @@ form {
 }
 
 .c_img_3 {
-    width: 15vw;
+    width: 11vw;
     position: sticky;
     animation: none;
 }
 
 .c_img_4 {
-    width: 22vw;
+    width: 18vw;
     position: sticky;
     animation: none;
 }
@@ -203,27 +205,27 @@ form {
 }
 
 .c_2 {
-    top: 39%;
-    left: 56%;
+    top: 54%;
+    left: 58%;
 }
 
 .c_3 {
-    top: 42%;
+    top: 50%;
     right: 0;
     animation: c_3 infinite 4s;
 }
 
 @keyframes c_3 {
     0% {
-        top: 42%;
+        top: 50%;
         right: 0;
     }
     50% {
-        top: 54%;
+        top: 58%;
         right: 12%;
     }
     100% {
-        top: 42%;
+        top: 50%;
         right: 0;
     }
 }
