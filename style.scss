@@ -827,10 +827,19 @@ footer {
     .medium__header {
         margin-bottom: 25px;
     }
-    #navbar .container .nav__items .nav__links ul {
-        padding: 150px 50px;
-        li a {
-            font-size: 25px;
+    .big__p {}
+    #navbar .container .nav__items {
+        .logo {
+            margin: 10px;
+            img {
+                width: 100px;
+            }
+        }
+        .nav__links ul {
+            padding: 150px 50px;
+            li a {
+                font-size: 25px;
+            }
         }
     }
     .video__section #third.page .content__right {
@@ -841,15 +850,18 @@ footer {
     }
     .page .container .content .svg__box {
         display: grid;
-        grid-template-columns: repeat(3, 120px);
+        grid-template-columns: repeat(4, 80px);
         margin-top: 60px;
+        img {
+            width: 70px;
+        }
     }
     #advantages {
         .advantage__box {
             display: grid;
             grid-template-columns: 1fr;
             padding: 0;
-            margin-top: 20px;
+            margin: 20px 0;
             .advantage {
                 padding: 10px 20px;
             }
