@@ -369,6 +369,12 @@
                 menutoggle.classList.toggle("active");
             };
         </script>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function() {
+                var header = document.querySelector("nav");
+                header.classList.toggle("sticky", window.scrollY > 1000)
+            })
+        </script>
         <script>
             $(document).ready(function() {
                 // Add smooth scrolling to all links

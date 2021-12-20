@@ -44,7 +44,7 @@ a {
 .logo__container {
     min-width: 50%;
     height: 1px;
-    z-index: 999;
+    z-index: -1;
 }
 
 .btn {
@@ -446,7 +446,7 @@ a {
         position: absolute;
         left: 15%;
         top: -5%;
-        z-index: -1;
+        z-index: -2;
     }
     .gray-2 {
         position: absolute;
@@ -828,19 +828,29 @@ footer {
         margin-bottom: 25px;
     }
     .big__p {}
-    #navbar .container .nav__items {
-        .logo {
-            margin: 10px;
-            img {
-                width: 100px;
+    #navbar .container {
+        padding: 0;
+        .nav__items {
+            .logo {
+                margin: 10px;
+                img {
+                    width: 100px;
+                }
+            }
+            .nav__links ul {
+                padding: 150px 50px;
+                li a {
+                    font-size: 25px;
+                }
             }
         }
-        .nav__links ul {
-            padding: 150px 50px;
-            li a {
-                font-size: 25px;
-            }
+        .nav__items .nav__links ul .toggle {
+            position: absolute;
+            top: 1.25%;
         }
+    }
+    #navbar.sticky {
+        background-color: var(--var-bg);
     }
     .video__section #third.page .content__right {
         width: 300px;
@@ -872,7 +882,15 @@ footer {
         width: 300px;
         margin: auto;
     }
+    #verification .verification__content video,
+    #verification .triol__content video {
+        width: 100vw;
+    }
     footer {
         margin-top: 50px;
+        .footer__sign {
+            display: block !important;
+            font-size: var(--small-txt);
+        }
     }
 }
