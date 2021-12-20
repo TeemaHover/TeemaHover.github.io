@@ -672,6 +672,31 @@ footer {
                 width: 100vw;
                 background-color: var(--var-bg);
                 transition: 0.5s ease-in-out;
+                &.active {
+                    visibility: visible;
+                    transition: 0.5s ease-in-out;
+                    ul {
+                        .toggle {
+                            transition: 0.5s ease-in-out;
+                            span {
+                                width: 20px;
+                                height: 2px;
+                                &:nth-child(1) {
+                                    transform: translateY(0) rotate(45deg);
+                                }
+                                &:nth-child(2) {
+                                    transform: translateY(0px) rotate(-45deg);
+                                }
+                            }
+                        }
+                    }
+                }
+                &.active>.nav__btns {
+                    visibility: visible;
+                    position: absolute;
+                    left: 50%;
+                    top: 6vh;
+                }
                 ul {
                     display: inline-block;
                     padding: 150px 75px;
@@ -712,32 +737,10 @@ footer {
                         }
                     }
                 }
-                &.active {
-                    visibility: visible;
-                    transition: 0.5s ease-in-out;
-                    ul {
-                        .toggle {
-                            transition: 0.5s ease-in-out;
-                            span {
-                                width: 20px;
-                                height: 2px;
-                                &:nth-child(1) {
-                                    transform: translateY(0) rotate(45deg);
-                                }
-                                &:nth-child(2) {
-                                    transform: translateY(0px) rotate(-45deg);
-                                }
-                            }
-                        }
-                    }
-                }
-                &.active>.nav__btns {
-                    visibility: visible;
-                }
             }
         }
         .nav__btns {
-            visibility: visible;
+            visibility: hidden;
             position: absolute;
             left: 50%;
             top: 6vh;
@@ -793,6 +796,30 @@ footer {
     }
     .container {
         width: 400px;
+    }
+    .page .container .content .svg__box {
+        display: grid;
+        grid-template-columns: repeat(3, 120px);
+        margin-top: 60px;
+    }
+    #advantages {
+        .advantage__box {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+     :root {
+        --small-txt: 11px;
+        --medium-txt: 14px;
+        --big-header: 39px;
+        --medium--header: 35px;
+        --small-header: 13px;
+    }
+    .container {
+        width: 300px;
     }
     .page .container .content .svg__box {
         display: grid;

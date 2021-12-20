@@ -823,6 +823,33 @@ footer .container .footer__sign {
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
   }
+  #navbar .container .nav__items .nav__links.active {
+    visibility: visible;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  #navbar .container .nav__items .nav__links.active ul .toggle {
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  #navbar .container .nav__items .nav__links.active ul .toggle span {
+    width: 20px;
+    height: 2px;
+  }
+  #navbar .container .nav__items .nav__links.active ul .toggle span:nth-child(1) {
+    -webkit-transform: translateY(0) rotate(45deg);
+            transform: translateY(0) rotate(45deg);
+  }
+  #navbar .container .nav__items .nav__links.active ul .toggle span:nth-child(2) {
+    -webkit-transform: translateY(0px) rotate(-45deg);
+            transform: translateY(0px) rotate(-45deg);
+  }
+  #navbar .container .nav__items .nav__links.active > .nav__btns {
+    visibility: visible;
+    position: absolute;
+    left: 50%;
+    top: 6vh;
+  }
   #navbar .container .nav__items .nav__links ul {
     display: inline-block;
     padding: 150px 75px;
@@ -871,32 +898,8 @@ footer .container .footer__sign {
             transform: translateY(5px);
     width: 22px;
   }
-  #navbar .container .nav__items .nav__links.active {
-    visibility: visible;
-    -webkit-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-  }
-  #navbar .container .nav__items .nav__links.active ul .toggle {
-    -webkit-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-  }
-  #navbar .container .nav__items .nav__links.active ul .toggle span {
-    width: 20px;
-    height: 2px;
-  }
-  #navbar .container .nav__items .nav__links.active ul .toggle span:nth-child(1) {
-    -webkit-transform: translateY(0) rotate(45deg);
-            transform: translateY(0) rotate(45deg);
-  }
-  #navbar .container .nav__items .nav__links.active ul .toggle span:nth-child(2) {
-    -webkit-transform: translateY(0px) rotate(-45deg);
-            transform: translateY(0px) rotate(-45deg);
-  }
-  #navbar .container .nav__items .nav__links.active > .nav__btns {
-    visibility: visible;
-  }
   #navbar .container .nav__btns {
-    visibility: visible;
+    visibility: hidden;
     position: absolute;
     left: 50%;
     top: 6vh;
@@ -946,6 +949,32 @@ footer .container .footer__sign {
   }
   .container {
     width: 400px;
+  }
+  .page .container .content .svg__box {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (120px)[3];
+        grid-template-columns: repeat(3, 120px);
+    margin-top: 60px;
+  }
+  #advantages .advantage__box {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 360px) {
+  :root {
+    --small-txt: 11px;
+    --medium-txt: 14px;
+    --big-header: 39px;
+    --medium--header: 35px;
+    --small-header: 13px;
+  }
+  .container {
+    width: 300px;
   }
   .page .container .content .svg__box {
     display: -ms-grid;
