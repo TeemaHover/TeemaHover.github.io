@@ -212,8 +212,6 @@ a {
   width: 100vw;
   background: transparent;
   z-index: 999;
-  -webkit-transition: 0.5s linear;
-  transition: 0.5s linear;
 }
 
 #navbar .container {
@@ -846,11 +844,26 @@ footer .container .footer__sign {
     -webkit-transform: translateY(0px) rotate(-45deg);
             transform: translateY(0px) rotate(-45deg);
   }
-  #navbar .container .nav__items .nav__links.active > .nav__btns {
+  #navbar .container .nav__items .nav__links.active ~ .nav__btns {
     visibility: visible;
     position: absolute;
     left: 50%;
-    top: 6vh;
+    top: 70vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 300px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #navbar .container .nav__items .nav__links.active ~ .nav__btns a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #navbar .container .nav__items .nav__links ul {
     display: inline-block;

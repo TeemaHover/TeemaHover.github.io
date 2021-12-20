@@ -191,7 +191,7 @@ a {
     width: 100vw;
     background: transparent;
     z-index: 999;
-    transition: 0.5s linear;
+    // transition: 0.5s linear;
     .container {
         padding: 25px 0;
         background: transparent;
@@ -692,11 +692,18 @@ footer {
                         }
                     }
                 }
-                &.active>.nav__btns {
+                &.active~.nav__btns {
                     visibility: visible;
                     position: absolute;
                     left: 50%;
-                    top: 6vh;
+                    top: 70vh;
+                    display: flex;
+                    width: 300px;
+                    justify-content: center;
+                    a {
+                        display: flex;
+                        align-items: center;
+                    }
                 }
                 ul {
                     display: inline-block;
