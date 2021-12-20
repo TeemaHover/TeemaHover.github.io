@@ -813,13 +813,31 @@ footer {
 @media (max-width: 360px) {
      :root {
         --small-txt: 11px;
-        --medium-txt: 14px;
-        --big-header: 39px;
-        --medium--header: 35px;
+        --medium-txt: 12px;
+        --big-header: 34px;
+        --medium--header: 32px;
         --small-header: 13px;
     }
     .container {
         width: 300px;
+    }
+    .btn {
+        padding: 15px 25px;
+    }
+    .medium__header {
+        margin-bottom: 25px;
+    }
+    #navbar .container .nav__items .nav__links ul {
+        padding: 150px 50px;
+        li a {
+            font-size: 25px;
+        }
+    }
+    .video__section #third.page .content__right {
+        width: 300px;
+        p {
+            font-size: var(--medium-txt);
+        }
     }
     .page .container .content .svg__box {
         display: grid;
@@ -830,6 +848,19 @@ footer {
         .advantage__box {
             display: grid;
             grid-template-columns: 1fr;
+            padding: 0;
+            margin-top: 20px;
+            .advantage {
+                padding: 10px 20px;
+            }
         }
+    }
+    #verification .verification__content .big__p,
+    #verification .triol__content .big__p {
+        width: 300px;
+        margin: auto;
+    }
+    footer {
+        margin-top: 50px;
     }
 }
