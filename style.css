@@ -212,6 +212,8 @@ a {
   width: 100vw;
   background: transparent;
   z-index: 999;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
 }
 
 #navbar .container {
