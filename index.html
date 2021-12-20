@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Scroll animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -60,9 +63,9 @@
             <div class="container">
                 <video src="./video/main.mp4" class="video" autoplay muted></video>
                 <div class="content">
-                    <h1 class="big__header">Сайн байна уу?
+                    <h1 class="big__header" data-aos="fade-up">Сайн байна уу?
                     </h1>
-                    <p class="big__p">
+                    <p class="big__p" data-aos="fade-up" data-aos-delay="300">
                         Салбар салбарын бизнесийн чиглэл, үйл ажиллагааны <br> ур чадвараас үл хамааран өөрийн бизнест зориулсан
                         <br> вэбсайттай байх нь шинэ эриний зах зээлийн зайлшгүй <br> хэрэгцээ болсон.
                     </p>
@@ -357,47 +360,51 @@
                 </p>
             </div>
         </div>
-        </f>
-        <script src="./java.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-            let menutoggle = document.querySelector(".nav__links");
-            menutoggle.onclick = function() {
-                menutoggle.classList.toggle("active");
-            };
-        </script>
-        <script type="text/javascript">
-            window.addEventListener("scroll", function() {
-                var header = document.querySelector("nav");
-                header.classList.toggle("sticky", window.scrollY > 1000)
-            })
-        </script>
-        <script>
-            $(document).ready(function() {
-                // Add smooth scrolling to all links
-                $("a").on('click', function(event) {
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./java.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        let menutoggle = document.querySelector(".nav__links");
+        menutoggle.onclick = function() {
+            menutoggle.classList.toggle("active");
+        };
+    </script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("nav");
+            header.classList.toggle("sticky", window.scrollY > 1000)
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
 
-                    // Make sure this.hash has a value before overriding default behavior
-                    if (this.hash !== "") {
-                        // Prevent default anchor click behavior
-                        event.preventDefault();
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
-                        // Store hash
-                        var hash = this.hash;
+                    // Store hash
+                    var hash = this.hash;
 
-                        // Using jQuery's animate() method to add smooth page scroll
-                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                        $('html, body').animate({
-                            scrollTop: $(hash).offset().top
-                        }, 800, function() {
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
 
-                            // Add hash (#) to URL when done scrolling (default click behavior)
-                            window.location.hash = hash;
-                        });
-                    } // End if
-                });
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
             });
-        </script>
+        });
+    </script>
