@@ -743,7 +743,6 @@ footer .container .footer__sign {
   padding: 50px 0;
 }
 
-<<<<<<< HEAD
 @media (max-width: 1280px) {
   :root {
     --small-txt: 11px;
@@ -752,14 +751,10 @@ footer .container .footer__sign {
     --medium--header: 39px;
     --small-header: 15px;
   }
-=======
-@media only screen and (max-width: 1920px) {
->>>>>>> 8d4c5c571ef1949e00870eeaac345821f8c27688
   video {
     height: 100%;
     width: auto;
   }
-<<<<<<< HEAD
   .big__header {
     margin: 6% 0;
   }
@@ -841,7 +836,7 @@ footer .container .footer__sign {
     cursor: pointer;
     position: absolute;
     right: 10%;
-    top: 2.5%;
+    top: 3.5%;
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -904,7 +899,7 @@ footer .container .footer__sign {
     visibility: visible;
     position: absolute;
     left: 50%;
-    top: 5vh;
+    top: 6vh;
     font-size: var(--small-header);
     font-weight: bold;
     -webkit-transform: translate(-50%, -50%);
@@ -965,7 +960,5 @@ footer .container .footer__sign {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-=======
->>>>>>> 8d4c5c571ef1949e00870eeaac345821f8c27688
 }
 /*# sourceMappingURL=style.css.map */
