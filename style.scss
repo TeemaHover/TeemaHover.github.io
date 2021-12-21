@@ -15,6 +15,7 @@
     --var-dark-gray: #546175;
     --small-txt: 14px;
     --medium-txt: 18px;
+    --main-header: 54px;
     --big-header: 54px;
     --medium--header: 42px;
     --small-header: 18px;
@@ -60,6 +61,13 @@ a {
 
 .svg {
     width: 100px;
+}
+
+.main__header {
+    font-size: var(--main-header);
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 7% 0;
 }
 
 .big__header {
@@ -817,7 +825,8 @@ footer {
      :root {
         --small-txt: 11px;
         --medium-txt: 14px;
-        --big-header: 39px;
+        --main-header: 33px;
+        --big-header: 30px;
         --medium--header: 35px;
         --small-header: 13px;
     }
@@ -829,6 +838,9 @@ footer {
         grid-template-columns: repeat(3, 120px);
         margin-top: 60px;
     }
+    #navbar .container .nav__items .nav__links.active~.nav__btns {
+        top: 75vh;
+    }
     #advantages {
         .advantage__box {
             display: grid;
@@ -837,11 +849,53 @@ footer {
     }
 }
 
+#verification .verification__content video,
+#verification .triol__content video {
+    width: 110%;
+}
+
+@media (max-width: 420px) {
+     :root {
+        --small-txt: 11px;
+        --medium-txt: 14px;
+        --big-header: 25px;
+        --main-header: 35px;
+        --medium--header: 25px;
+        --small-header: 13px;
+    }
+    .container {
+        width: 350px;
+    }
+    .page .container .content .svg__box {
+        display: grid;
+        grid-template-columns: repeat(3, 120px);
+        margin-top: 60px;
+    }
+    #advantages {
+        .advantage__box {
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 1% 5%;
+        }
+    }
+    #trial {
+        margin: 0 30px;
+    }
+    #verification {
+        margin: 150px 30px 0 30px;
+    }
+    #verification .verification__content video,
+    #verification .triol__content video {
+        width: 110%;
+    }
+}
+
 @media (max-width: 360px) {
      :root {
         --small-txt: 11px;
         --medium-txt: 12px;
-        --big-header: 25px;
+        --main-header: 32px;
+        --big-header: 22px;
         --medium--header: 25px;
         --small-header: 13px;
     }
@@ -854,7 +908,6 @@ footer {
     .medium__header {
         margin-bottom: 25px;
     }
-    .big__p {}
     #navbar .container {
         padding: 0;
         .nav__items {
@@ -875,6 +928,9 @@ footer {
             position: absolute;
             top: 1.25%;
         }
+    }
+    .video__section #second p {
+        margin-right: 5%;
     }
     .video__section #third.page .content__right {
         width: 300px;
