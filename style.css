@@ -22,10 +22,6 @@
   --small-header: 18px;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 body {
   background-color: var(--var-bg);
   -ms-scroll-snap-type: y mandatory;
@@ -450,6 +446,7 @@ a {
 
 #verification .verification__content,
 #verification .triol__content {
+  overflow-x: hidden;
   min-width: 60%;
 }
 
