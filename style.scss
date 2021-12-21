@@ -20,9 +20,14 @@
     --small-header: 18px;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--var-bg);
     scroll-snap-type: y mandatory;
+    overflow-x: hidden;
     section {
         scroll-snap-align: start;
     }
@@ -836,8 +841,8 @@ footer {
      :root {
         --small-txt: 11px;
         --medium-txt: 12px;
-        --big-header: 34px;
-        --medium--header: 32px;
+        --big-header: 25px;
+        --medium--header: 25px;
         --small-header: 13px;
     }
     .container {
