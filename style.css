@@ -445,23 +445,17 @@ a {
 }
 
 #verification .verification__content,
-#verification .triol__content {
+#verification .trial__content {
   overflow-x: hidden;
-  min-width: 60%;
-}
-
-#verification .verification__content video,
-#verification .triol__content video {
-  width: 60%;
 }
 
 #verification .verification__content .big__p,
-#verification .triol__content .big__p {
+#verification .trial__content .big__p {
   margin-top: 30px;
 }
 
 #verification .verification__content .buttons,
-#verification .triol__content .buttons {
+#verification .trial__content .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,8 +465,12 @@ a {
 }
 
 #verification .verification__content .buttons a,
-#verification .triol__content .buttons a {
+#verification .trial__content .buttons a {
   margin-right: 30px;
+}
+
+#verification .verification__content video {
+  width: 50%;
 }
 
 #trial {
@@ -709,7 +707,7 @@ a {
   position: absolute;
   top: -35%;
   right: 0;
-  width: 55vw;
+  width: 55vw !important;
 }
 
 #fifth.page .container .explore__content {
@@ -1019,11 +1017,10 @@ footer .container .footer__sign {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-}
-
-#verification .verification__content video,
-#verification .triol__content video {
-  width: 110%;
+  #verification .verification__content video,
+  #verification .trial__content video {
+    width: 110%;
+  }
 }
 
 @media (max-width: 420px) {
@@ -1059,7 +1056,7 @@ footer .container .footer__sign {
     margin: 150px 30px 0 30px;
   }
   #verification .verification__content video,
-  #verification .triol__content video {
+  #verification .trial__content video {
     width: 110%;
   }
 }
@@ -1132,12 +1129,12 @@ footer .container .footer__sign {
     padding: 10px 20px;
   }
   #verification .verification__content .big__p,
-  #verification .triol__content .big__p {
+  #verification .trial__content .big__p {
     width: 300px;
     margin: auto;
   }
   #verification .verification__content video,
-  #verification .triol__content video {
+  #verification .trial__content video {
     width: 100vw;
   }
   footer {

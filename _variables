@@ -1,0 +1,13 @@
+:root {
+    --var-bg: #ebeefd;
+    --var-dark: #202f44;
+    --var-blue: #0045ff;
+    --var-white: #fff;
+    --var-dark-gray: #546175;
+    --small-txt: 14px;
+    --medium-txt: 18px;
+    --main-header: 54px;
+    --big-header: 54px;
+    --medium--header: 42px;
+    --small-header: 18px;
+}
