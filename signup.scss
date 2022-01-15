@@ -1,0 +1,87 @@
+.signup {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
+    .signup__panel {
+        width: 584px;
+        height: 100vh;
+        background-color: white;
+        .signup__nav {
+            width: 100%;
+            padding: 10px 40px 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo {
+                img {
+                    width: 100px;
+                }
+            }
+            .login {
+                font-size: 14px;
+                a {
+                    color: rgba(28, 83, 127, 0.66);
+                }
+            }
+        }
+        .signup__content {
+            display: flex;
+            flex-direction: column;
+            padding: 0px 105px;
+            margin: auto auto;
+            margin-top: 150px;
+            height: 100%;
+            .sign__header {
+                font-size: 26px;
+                font-weight: bold;
+                text-align: center;
+                color: rgb(28, 83, 127);
+                margin: 10px 0;
+            }
+            .sign__inputs {
+                display: flex;
+                flex-direction: column;
+                margin: 50px 0;
+                input {
+                    // transition: all 150ms ease-in 0s;
+                    width: 100%;
+                    height: 63px;
+                    font-size: 16px;
+                    color: rgb(28, 83, 127);
+                    padding-left: 32px;
+                    margin-bottom: 20px;
+                    border-radius: 4px;
+                    border: 1.3px solid rgba(28, 83, 127, 0.17);
+                }
+                .forget {
+                    font-size: 14px;
+                    opacity: 0.5;
+                    margin-left: 20px;
+                }
+            }
+            .sign__btn {
+                width: 268px;
+                height: 63px;
+                background-color: rgb(28, 83, 127);
+                color: white;
+                font-weight: bold;
+                font-size: 17px;
+                border-radius: 5px;
+                display: grid;
+                place-items: center;
+                margin: 0 auto;
+            }
+        }
+    }
+    .signup__vid {
+        min-width: 856px;
+        background-color: rgb(245, 248, 252);
+        display: grid;
+        place-items: center;
+        video {
+            width: 100%;
+            min-width: 850px;
+        }
+    }
+}
