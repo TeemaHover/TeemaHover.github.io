@@ -1,3 +1,8 @@
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .signup {
   height: 100vh;
   display: -ms-grid;
@@ -71,6 +76,14 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 50px 0;
+}
+
+.signup .signup__panel .signup__content .sign__inputs .signup__name {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
 }
 
 .signup .signup__panel .signup__content .sign__inputs input {

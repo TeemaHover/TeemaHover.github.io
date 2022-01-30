@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <title>Hover;</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/FaviconHover.png">
 
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -25,17 +26,13 @@
 
 <body>
     <nav id="navbar">
-
         <div class="container">
             <div class="nav__items">
-
-
                 <div class="logo">
                     <a href="index.html">
                         <img src="./img/BlueHover.png" alt="">
                     </a>
                 </div>
-
                 <div class="nav__links">
                     <ul>
                         <li><a href="">Нүүр<i class="fas fa-angle-down"></i></a>
@@ -52,8 +49,8 @@
                 </div>
 
                 <div class="nav__btns">
-                    <a href="#">Нэвтрэх</a>
-                    <a href="#" class="sign__btn">Бүртгүүлэх</a>
+                    <a href="login.html">Нэвтрэх</a>
+                    <a href="signup.html" class="sign__btn">Бүртгүүлэх</a>
                 </div>
             </div>
         </div>
@@ -279,12 +276,12 @@
                         Манай үйлчлүүлэгчдийн хувьд цаг бол алт мэт байдаг. Тийм ч учраас бид өөрсдийнхөө хурдтай, үр бүтээлтэй байдалд хамгийн их ач холбогдол өгч ажилладаг.
                     </p>
                 </div>
-                <div class="advantage">
+                <!-- <div class="advantage">
                     <h4>Баталгаа </h4>
                     <p class="big__p">
                         Get premium support from dedicated success and solutions engineering teams whenever you need via email, chat or phone. We're there for you from the design and deployment stages through operations to help solve problems before they arise.
                     </p>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -360,12 +357,8 @@
             </div>
         </div>
     </footer>
-    <script>
-        AOS.init();
-    </script>
-    <script src="./java.js"></script>
 
-    <script src="./normalize.js"></script>
+
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -375,9 +368,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init();
+    </script>
     <script>
         let menutoggle = document.querySelector(".nav__links");
         menutoggle.onclick = function() {
