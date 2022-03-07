@@ -519,8 +519,8 @@ a {
   display: -ms-grid;
   display: grid;
   grid-column-gap: 40px;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   z-index: -2;
 }
 
@@ -584,8 +584,8 @@ a {
 #advantages .advantage__box {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   text-align: left;
   padding: 3% 13%;

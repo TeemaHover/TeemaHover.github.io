@@ -441,7 +441,7 @@ a {
             margin: 50px 0;
             display: grid;
             grid-column-gap: 40px;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
             z-index: -2;
             .grid__img {
                 img {
@@ -493,7 +493,7 @@ a {
     }
     .advantage__box {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
         text-align: left;
         padding: 3% 13%;
